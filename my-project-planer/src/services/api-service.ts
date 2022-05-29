@@ -6,7 +6,8 @@ import { User } from "../models/user";
 import { Id, WithId } from "../models/with-id";
 import { removeUser, setUser } from "./auth-service";
 
-const hostname = "http://localhost:8080"; //"https://85b6f777-e407-42fd-84f2-db8e867146d5.mock.pstmn.io";
+// const hostname = "http://localhost:8080";
+const hostname = "https://d575-141-85-0-105.eu.ngrok.io" 
 
 export const register = async (email: string, password: string) => {
     const { data } = await axios.post(`${hostname}/auth/register`, {
